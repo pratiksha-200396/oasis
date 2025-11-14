@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>flower</title>
+</head>
+
+<body>
+    <nav>
+        <div class="heading">VINTAGE</div>
+        <span class="sideMenuButton" 
+            onclick="openNavbar()">
+            &#9776
+        </span>
+
+        <div class="navbar">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Side navigation bar for 
+        responsive website -->
+    <div class="sideNavigationBar" 
+        id="sideNavigationBar">
+        <a href="#" class="closeButton" 
+            onclick="closeNavbar()">
+            &#x274C
+        </a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Sign Up</a>
+    </div>
+
+    <!-- Content -->
+    <header >
+    
+    </header>
+
+
+    <section class="container1" id="My Projects">
+        <h1 style="margin-bottom: 50px;color: burlywood;">ABOUT</h1>
+        <div class="container">
+        <div class="row">
+            <div>
+                <img src="Golden Floral Frame Vector Art.jpg.jpeg"alt="flower"style="float:right;width: 50% ;height:500px; color:white;">
+
+            </div>
+            <div><p>At flower company, our journey began with a simple love for nature's beauty and a desire to share that joy with others. Our believe in the power of flowers to transform a space and brighten a day. What started as a hobby of arranging bouquets for friends and family has blossomed into a passion-driven business dedicated to curating the freshest, most vibrant floral arrangements for every occasion. We pour our heart and creativity into every petal, because for us, it's more than just a business—it's about spreading happiness, one bouquet at a time.</p>
+                 <p>we are purveyors of happiness and natural beauty. Our brand was born from a desire to make luxurious, modern floral design accessible to all. We source the finest, ethically grown flowers to create breathtaking arrangements that capture the essence of every occasion. Our commitment to quality, creativity, and thoughtful design ensures that every order from us becomes a memorable experience.</p>
+            </div>
+        </div>
+      
+        </div>
+       
+     </section>
+
+
+  
+
+<h1 style="color: burlywood;"> Images</h1>
+<div class="container">
+<div class="gallery">
+  <img src="new.jpg" alt="Cinque Terre" class="gallery-item" onclick="openModal('modal1', 'Cinque Terre')">
+  <img src="loose-flower-arrangement.jpg" alt="Forest" class="gallery-item" onclick="openModal('modal2', 'Forest')">
+  <img src="images.jpg" alt="Northern Lights" class="gallery-item" onclick="openModal('modal3', 'Nothern Lights')">
+  <img src="images2.jpg" alt="Mountains" class="gallery-item" onclick="openModal('modal4', 'Mountains')">
+</div>
+
+<div id="modal1" class="modal">
+  <span class="close" onclick="closeModal('modal1')">&times;</span>
+  <img src="new.jpg" alt="Cinque Terre" class="modal-content">
+  <div class="caption"></div>
+</div>
+
+<div id="modal2" class="modal">
+  <span class="close" onclick="closeModal('modal2')">&times;</span>
+  <img src="loose-flower-arrangement.jpg" alt="Flower" class="modal-content">
+  <div class="caption"></div>
+</div>
+
+<div id="modal3" class="modal">
+  <span class="close" onclick="closeModal('modal3')">&times;</span>
+  <img src="images.jpg" alt="flower" class="modal-content">
+  <div class="caption"></div>
+</div>
+
+<div id="modal4" class="modal">
+  <span class="close" onclick="closeModal('modal4')">&times;</span>
+  <img src="images2.jpg" alt="flower" class="modal-content">
+  <div class="caption"></div>
+</div>
+
+</div>
+<script>
+function openModal(modalId, caption) {
+  let modal = document.getElementById(modalId);
+  modal.style.display = "flex";
+  modal.classList.add("show");
+  let message = modal.querySelector(".caption");
+  message.innerText = caption;
+}
+
+function closeModal(modalId) {
+  let modal = document.getElementById(modalId);
+  modal.classList.remove("show");
+  setTimeout(function () {
+    modal.style.display = "none";
+    modal.querySelector(".caption").innerText = "";
+  }, 300);
+}
+</script>
+<div class="row3" >
+ <div class='faq'>
+        <h1 style="text-align: center;color: burlywood;padding-bottom: 100px;">FAQ</h1>
+  <input id='faq-a' type='checkbox'>
+  <label for='faq-a'>
+    <p class="faq-heading">Do you deliver to all areas in india?</p>
+    <div class='faq-arrow'></div>
+      <p class="faq-text">Yes! We are open for most of the pincodes acorss Bangalore and Delhi. Make sure you share the complete address and phone number of the recipient to ensure proper delivery.</p>
+  </label>
+  <input id='faq-b' type='checkbox'>
+  <label for='faq-b'>
+    <p class="faq-heading">How are my flowers packaged?</p>
+    <div class='faq-arrow'></div>
+      <p class="faq-text">The cut flowers come wrapped in a high quality paper that protects them from damage and keeps them fresh while they are on the way to your home.
+
+Arrangements come wrapped in finest quality burlap to maintain the setup.
+
+All orders come with flower food that you need to add to the water in the vase to improve the flowers’ longevity.</p>
+  </label>
+  <input id='faq-c' type='checkbox'>
+  <label for='faq-c'>
+    <p class="faq-heading">Do you do bespoke arrangements?</p>
+    <div class='faq-arrow'></div>
+      <p class="faq-text">We don't offer bespoke arrangements at the moment, however, if you have a really pressing need for something specific, please reach out to us at hello@theflora.in and we shall try to accommodate your request.</p>
+  </label>
+  <input id='faq-d' type='checkbox'>
+  <label for='faq-d'>
+    <p class="faq-heading">What will happen if there’s no one home to receive the flowers?</p>
+    <div class='faq-arrow'></div>
+      <p class="faq-text">We usually call to confirm before we leave for the day’s deliveries. We shall only deliver at a time you confirm in advance. You can also choose to get it delivered with a security guard or neighbour.
+
+In case, even after a confirmation, a locked door greets our delivery person, he shall return back to our office with a sad face and we shall make another attempt at a date-time suitable to you. However, such missed deliveries shall be chargeable at Rs 250 per delivery. </p></label>
+  </label>
+  <input id='faq-e' type='checkbox'>
+  <label for='faq-e'>
+    <p class="faq-heading">Can I split the purchased space between several accounts?</p>
+    <div class='faq-arrow'></div>
+      <p class="faq-text">Yes, you can! Just send me all the referral links during the checkout process, including a short note, what account should receive which amount of space.</p>
+    </label> 
+    <input id='faq-e' type='checkbox'>
+  <label for='faq-e'>
+    <p class="faq-heading">I want to cancel my order, how will I get a refund?</p>
+    <div class='faq-arrow'></div>
+      <p class="faq-text">To process all cancellations, you will have to email us at flower@.in. Other points to take into consideration are:
+
+For normal orders:
+
+- Orders cancelled within 12 hours of ordering get a complete (100%) refund
+
+- Orders cancelled after 12 hours shall get a partial refund (25%)
+
+For subscriptions:
+
+- You can cancel any time between deliveries
+
+- Refund shall be processed for remaining deliveries on a pro-rata basis</p>
+  </label>
+
+</div>
+</div>
+
+</div class="row5">
+   <h1 style="text-align: center;color: burlywood; margin-top: 100px;margin-bottom: 0px;">CONTACT US </h1>
+    <footer class="contact" id="contact">
+        <div class="content">
+          
+            <div class="contactMenu">
+                 <div>
+                 <img src="360_F_892853292_E87U6pyEbbuS8XZ3xbucwJN4gLr1r6GR.jpg"style="height: 100%;width: 70%;">
+
+                </div>
+                <div class="input1">
+                    <div class="label1">Your Name</div>
+                    <div class="input2">
+                        <input type="text" 
+                            placeholder="Enter your Name here">
+                    </div>
+                    <div class="label1">
+                        <label>Your Email</label>
+                    </div>
+                    <div class="input2">
+                        <input type="text" 
+                            placeholder="Enter your Email here">
+                    </div>
+                    <div class="label1">
+                        <label>Your Password</label>
+                    </div>
+                    <div class="input2">
+                        <input type="text" 
+                            placeholder="Enter your Password here">
+                    </div>
+                    <div class="button">
+                        <button>Sign Up</button>
+                    </div>
+                </div>
+               
+              
+            </div>
+        </div>
+    
+    </footer>
+    <!-- Footer section -->
+</div> 
+<footer class="fot" id="fot">
+  <p>AURANGABAD MAHARASHTRA<br>
+  <a href="home">VINTGE@.com</a></p>
+</footer>
+</body>
+
+</html>
