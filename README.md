@@ -3,19 +3,20 @@ Task 1: web page
 In this task, I developed a  web page application using HTML, CSS, and JavaScript.Landing page development involves creating a single, standalone web page with a specific goal to convert visitors into leads or customers
 
 
-Task 2: resume
-For the second task, I created a resume page
+Task 2: portfolio
+For the second task, I created a resume page Detail-oriented and ambitious front end web developer eager to leverage Bachelor of Science degree in Computer Science and recent experience participating in various coding programs towards supporting business web development needs.
 
-Task 3: calculator
-The third task involved building a todo web application using HTML, CSS, and JavaScript. The todo app allows users to add tasks, mark them as complete, and delete them when necessary. It provides a simple and intuitive interface for managing and organizing tasks effectively.
+Task 3: temparature converter website
+This project delivered a fully functional, web-based temperature converter application that facilitates seamless conversion between Celsius, Fahrenheit, and Kelvin scales. The development process focused on creating an intuitive user interface and implementing accurate, dynamic conversion logic using JavaScript. 
 
-Task 4: thermamiter
+Task 4: calculator
+The development of a calculator web page is a foundational web development project that utilizes HTML, CSS, and JavaScript to create a functional, user-friendly interface. The project serves as an excellent exercise for understanding core web technologies, user interaction handling, and basic programming logic. 
 
 Getting Started
 To view and interact with the completed tasks, please follow these steps:
 
 Open the respective task folders in your preferred code editor.
 Launch the HTML files in a web browser to experience the functionality of each task.
-Feel free to explore the code and provide any feedback or suggestions for improvement.
+
 
 Thank you for reviewing my completed tasks!
